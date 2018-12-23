@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.djm.wifitest.activity_main">
+
+    <LinearLayout
+        android:id="@+id/ly_wifi"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_wifi_state"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/cb_wifi"
+            android:layout_width="100dp"
+            android:background="@drawable/wifi_checkbox_sel"
+            android:button="@null"
+            android:layout_marginRight="30dp"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_line"
+        android:layout_below="@id/ly_wifi"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        />
+
+    <!-- 底部布局 -->
+    <LinearLayout
+        android:id="@+id/lly_bottom"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <!-- 扫描 -->
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="刷新"
+            android:onClick="scanWifi"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+    <!-- wifi下拉列表 -->
+    <ListView
+        android:id="@+id/lv_wifi"
+        android:layout_below="@id/tv_line"
+        android:layout_width="match_parent"
+        android:layout_above="@id/lly_bottom"
+        android:background="#ffffff"
+        android:layout_height="match_parent"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="500dp"
+    android:layout_height="400dp"
+    android:background="#ff000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#000000"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_wifi_name"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:textColor="#2eb6aa"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edtTxt_wifi_pwd"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:textColor="#2B2B2B"
+                android:lines="1"
+                android:singleLine="true"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_display_PWD"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="显示密码"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btn_wifi_connect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:enabled="false"
+                    android:text="连接"
+                    android:textColor="#2eb6aa"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btn_wifi_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="取消"
+                    android:textColor="#2eb6aa"
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+

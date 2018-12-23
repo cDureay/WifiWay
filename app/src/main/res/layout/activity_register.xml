@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55e1ee"
+    >
+    <EditText
+        android:id="@+id/edit_account"
+        android:drawableLeft="@android:drawable/ic_menu_myplaces"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="请输入手机号"
+        />
+
+    <EditText
+        android:id="@+id/edit_pwd"
+        android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="请输入密码"
+        />
+    <Button
+        android:id="@+id/button_sure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确认"
+        android:background="#dfee55"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_cancel"
+        android:text="取消"
+        android:background="#dfee55"
+        android:layout_marginTop="10dp"
+        />
+
+</LinearLayout>

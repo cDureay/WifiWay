@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3abdff"
+    >
+    <EditText
+        android:drawableLeft="@android:drawable/ic_menu_myplaces"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/resetpwd_edit_name"
+        android:hint="请输入您的手机号" />
+    <EditText
+        android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/resetpwd_edit_pwd_old"
+        android:hint="请输入您的旧密码"
+        />
+    <EditText
+        android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/resetpwd_edit_pwd_new"
+        android:hint="请输入您的新密码"
+        />
+    <EditText
+        android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/resetpwd_edit_pwd_check"
+        android:hint="请确认您的新密码"
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="确认"
+        android:id="@+id/resetpwd_btn_sure"
+        android:textSize="20sp"
+        android:background="#66dbc0"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:id="@+id/resetpwd_btn_cancel"
+        android:textSize="20sp"
+        android:background="#f7b166"
+        android:layout_marginTop="20dp"
+        />
+
+
+
+</LinearLayout>
